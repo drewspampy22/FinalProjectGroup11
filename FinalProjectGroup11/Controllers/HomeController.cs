@@ -26,6 +26,18 @@ namespace FinalProjectGroup11.Controllers
         {
             return View("DrewPage");
         }
+        public IActionResult HarshPage()
+        {
+            return View("HarshPage");
+        }
+        public IActionResult MuyiwaPage()
+        {
+            return View("MuyiwaPage");
+        }
+        public IActionResult Database()
+        {
+            return View("Database");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

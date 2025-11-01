@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .profile-photo {
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1565c0;
+        }
+
+        p.bio {
+            text-align: center;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1e88e5;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            ul li {
+                background: #e3f2fd;
+                margin: 8px 0;
+                padding: 10px 14px;
+                border-radius: 8px;
+                color: #333;
+            }
+                  
+              .footer{
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+              }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="~/images/Harsh.jpg" alt="Harsh's Photo" class="profile-photo" />
+
+        <h1>Harsh Patel's Profile Page</h1>
+        <p class="bio">Im currently a 4th year at UC working towards a degree in IT Software Development.</p>
+
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Movies and Shows - Prison Break, Breaking Bad, and Avengers Endgame</li>
+            <li>Videogames - Call of Duty, NBA 2K and Valorant</li>
+            <li>Watching Sports - Favorite teams are the Dallas Mavericks and Cincinnati Bengals</li>
+            <li>Music - Mostly Rap and Hip-Hop</li>
+        </ul>
+        <div class="footer">
+            <p>© 2025 Harsh Patel | University of Cincinnati</p>
+        </div>
+    </div>
+</body>
+</html>
