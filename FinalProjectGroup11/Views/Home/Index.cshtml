@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center" style="margin-top: 80px;">
+    <h1 class="display-4">Welcome to Profiles Hub</h1>
+    <p class="lead mt-3">
+        Discover student and professional profiles. Learn about their skills and projects — or create your own to join the community.
+    </p>
+
+    <div class="mt-4">
+        <a asp-controller="Profiles" asp-action="Index" class="btn btn-primary btn-lg mx-2">Browse Profiles</a>
+        <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary btn-lg mx-2">Create Profile</a>
+    </div>
 </div>
+
+<footer class="text-center mt-5 text-muted">
+    <small>© @DateTime.Now.Year Profiles Hub</small>
+</footer>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn {
+        border-radius: 8px;
+        padding: 12px 20px;
+    }
+
+    .lead {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+</style>
