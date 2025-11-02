@@ -2,8 +2,84 @@
     ViewData["Title"] = "MuyiwaPage";
 }
 
-<div class="container py-4">
-    <h1 class="display-6">Muyiwa's Page</h1>
-    <p>This is Muyiwa's page. Add your content here.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .profile-photo {
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1565c0;
+        }
+
+        p.bio {
+            text-align: center;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1e88e5;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            ul li {
+                background: #e3f2fd;
+                margin: 8px 0;
+                padding: 10px 14px;
+                border-radius: 8px;
+                color: #333;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="~/images/muyiwaphoto.jpg" alt="Muyiwa's Photo" class="profile-photo" />
+
+        <h1>Muyiwa Abimbola's Profile Page</h1>
+        <p class="bio">I'm a third year at The University of Cncinnati majoring in Software Application Development.</p>
+
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Cooking - Food from many cultures. I'm not very picky.'</li>
+            <li>Sports - Soccer, Basketball, Football</li>
+            <li>Lifting - I enjoy lifting and have lifted since junior year of hs</li>
+            <li>Music - I mostly listen to r&b, rap, afrobeats, etc. (Pretty diverse music taste)</li>
+            <li>Anime - My favorites are One Piece, Vinland Saga, Attack on Titan</li>
+        </ul>
+    </div>
+</body>
+</html>

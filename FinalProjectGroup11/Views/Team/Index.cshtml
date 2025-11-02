@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FinalProjectGroup11.Models.TeamMember>
+
+<h2>Team Overview</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Profile</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>@member.Name</td>
+                <td>@member.Role</td>
+                <td>@member.Email</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(member.ProfileUrl))
+                    {
+                        <a href="@member.ProfileUrl">View Profile</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
