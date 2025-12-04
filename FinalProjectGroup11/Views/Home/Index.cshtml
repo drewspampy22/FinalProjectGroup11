@@ -1,36 +1,115 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center" style="margin-top: 80px;">
-    <h1 class="display-4">Welcome to Profiles Hub</h1>
-    <p class="lead mt-3">
-        Discover student and professional profiles. Learn about their skills and projects — or create your own to join the community.
-    </p>
-
-    <div class="mt-4">
-        <a asp-controller="Profiles" asp-action="Index" class="btn btn-primary btn-lg mx-2">Browse Profiles</a>
-        <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary btn-lg mx-2">Create Profile</a>
-    </div>
-</div>
-
-<footer class="text-center mt-5 text-muted">
-    <small>© @DateTime.Now.Year Profiles Hub</small>
-</footer>
-
+<!-- FULL PAGE BACKGROUND -->
 <style>
     body {
-        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .btn {
-        border-radius: 8px;
-        padding: 12px 20px;
-    }
-
-    .lead {
-        max-width: 600px;
-        margin: 0 auto;
+        background: linear-gradient(to bottom, #d9e9ff, #ffffff);
+        min-height: 100vh;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
     }
 </style>
+
+
+<div class="py-5">
+    <div class="container">
+
+        <!-- HERO SECTION -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-7">
+                <h1 class="display-4 fw-semibold mb-3">
+                    Welcome to the FinalProjectGroup11
+                </h1>
+                <h1 class="display-4 fw-semibold mb-3">
+                    Profiles & Movies Hub
+                </h1>
+
+                <p class="lead mb-4">
+                    Explore our team member profiles and discover our shared hobby of watching and
+                    rating movies. Learn about each member, browse our movie database, and see how
+                    we collaborated to build this ASP.NET MVC website.
+                </p>
+
+            </div>
+
+            <div class="col-lg-5 mt-4 mt-lg-0">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-3">Quick Navigation</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <strong>Profiles:</strong>
+                                <a asp-controller="Home" asp-action="DrewPage">Drew</a>,
+                                <a asp-controller="Home" asp-action="HarshPage">Harsh</a>,
+                                <a asp-controller="Home" asp-action="MuyiwaPage">Muyiwa</a>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Movies Database:</strong>
+                                <a asp-controller="Home" asp-action="Database">Browse Movie Table</a>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Team Overview:</strong>
+                                <a asp-controller="Team" asp-action="Index">Meet the Team</a>
+                            </li>
+                            <li class="mb-0">
+                                <strong>Privacy:</strong>
+                                <a asp-controller="Home" asp-action="Privacy">View Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- WHAT THE SITE INCLUDES -->
+        <div class="row g-4">
+
+            <!-- PROFILES CARD -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="fw-semibold card-title">Student Profiles</h5>
+                        <p class="card-text">
+                            Learn more about each member of our team—who we are, what we study,
+                            and the hobbies that represent us. Each profile page includes a short bio
+                            and personal details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIES DATABASE CARD -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="fw-semibold card-title">Movies Database Table</h5>
+                        <p class="card-text">
+                            Our shared hobby is watching movies, so we built a SQL Server database to track
+                            film titles, release years, and ratings. View live data dynamically loaded
+                            through Entity Framework Core.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEAM OVERVIEW CARD -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="fw-semibold card-title">Team Overview</h5>
+                        <p class="card-text">
+                            Visit our Team Overview page to learn how we collaborated, divided tasks,
+                            and used GitHub to build and manage this MVC project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
